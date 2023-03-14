@@ -67,15 +67,15 @@ hr{
 	text-transform: lowercase;
 }
 
-.relationship{
-	color: #fff;
+/*.land_number{
+	color: #c72b2b;
 	width: 6em;
 	text-align: center;
 	padding: .4em .5em;
 	border-radius: 100px;
 	border-top-left-radius: 0;
 	background-color: #75A85E;
-}
+}*/
 
 .contact-section{
 	display: flex;
