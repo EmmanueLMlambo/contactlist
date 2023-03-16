@@ -4,7 +4,7 @@ body{
 }
 
 .container{
-	max-width: 428px;
+	max-width: none;
 	margin: 0 auto;
 	background-color: #313438;
 	height: 100vh;
@@ -17,18 +17,36 @@ a{
 .header{
 	display: flex;
 	justify-content: space-evenly;
-	color: #fff;
+	color: #dceb15;
 	background: linear-gradient(90deg, rgba(111,177,127,1) 0%, rgba(154,173,89,1) 100%);
 	padding: 2em 0;
 	align-items: center;
+	font-style: italic;
+	font-weight: bold;
+}
+#search-area{
+	display: flex;
+	justify-content: space-evenly;
+	color: #dceb15;
+	background: linear-gradient(90deg, rgba(111,177,127,1) 0%, rgba(154,173,89,1) 100%);
+	padding: 2em 0;
+	align-items: left;
+
+}
+
+h1{
+	font-size: 64px;
+	margin-top: 0%;
+	margin-bottom: 0%;
 }
 
 .contact-search{
 	font-size: 1.2em;
 	padding:.3em .3em;
 	border-radius: 100px;
-	border:1px solid white;
+	border:1px solid rgb(248, 247, 247);
 	outline: none;
+	
 }
 
 
@@ -67,15 +85,6 @@ hr{
 	text-transform: lowercase;
 }
 
-/*.land_number{
-	color: #c72b2b;
-	width: 6em;
-	text-align: center;
-	padding: .4em .5em;
-	border-radius: 100px;
-	border-top-left-radius: 0;
-	background-color: #75A85E;
-}*/
 
 .contact-section{
 	display: flex;
@@ -92,4 +101,17 @@ hr{
 .text{
 	padding-left: 1em;
 }
+#footer{
+		
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	height: 60px;
+	width: 100%;
+	background-color: #184a45;
+	color: #fcf66a;
+	text-align: center;
+}
+
+
 

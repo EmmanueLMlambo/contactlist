@@ -4,7 +4,7 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
 	
 	<link rel="preconnect" href="https://fonts.gstatic.com">
@@ -21,14 +21,15 @@
 
 		<!--this id the added coontent -->
 		<header class="header">
-			<h1 class="contact-search" > <b style="font-size: 24px;"> City of Mutare Switchboard </b></h1>	
+			<h1> 
+				City of Mutare Switchboard </h1>	
 					</header>
 					<hr>
 			
 					<!--end of added content-->
 
 		<!--  SEARCH FORM -->
-		<header class="header">
+		<header id="search-area">
 			
 			<form action="/" method="GET" class="search-bar" id='search-form'>
 
@@ -63,6 +64,19 @@
 				{% empty %}
 				<h3 style="color:#fff; padding:20px" > No contacts found..</h3>
 			{% endfor %}
+			</ul>
+			</section>
+			</div>
+
+
+
+<div class="fixed-bottom" id="footer">
+
+<div class="coca" style="padding-top: 15px;font-style:cambria ; font-size: 18px; font-weight: bold;">
+<p>Copyright City of Mutare ICT © 2023. All Rights Reserved.</p>
+</div>
+</div>
+
 
 
 </body>
