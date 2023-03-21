@@ -7,9 +7,9 @@ def index(request):
     contacts = Contacts.objects.all()
     search_input = request.GET.get('search-area')
     if search_input:
-        contacts = Contacts.objects.filter(Q(full_name__icontains=search_input) | Q(department__icontains=search_input))
+        contacts = Contacts.objects.filter(Q(full_name__icontains=search_input) | Q(department__icontains=search_input)).order_by('full_name')
     else:
-        contacts = Contacts.objects.all()
+        contacts = Contacts.objects.all().order_by('full_name')
         search_input = ''
     return render(request, 'index.html', {'contacts':contacts, 'search_input': search_input }, )
 
