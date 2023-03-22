@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-gkhd*f#z^%unn*w2q^*9l&w2y!bzcv&kzt!jq&+i6lfx!ys_o0
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['192.168.0.93']
 
 INTERNAL_IPS = [
     # ...
@@ -87,9 +87,10 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'contacts',
-        'HOST': 'localhost',
+        'HOST': '192.168.0.93',
         'USER': 'root',
-        'PASSWORD': 'triple3411'
+        'PASSWORD': 'triple3411',
+        'PORT': '3306'
     }
 }
 '''
