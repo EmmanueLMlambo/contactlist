@@ -10,13 +10,13 @@ body{
 .container{
 
 	margin: 0 auto;
-	background-color: #313438;
+	background-color: #f7f2f8;
 	min-height: 100vh;
 }
 
 .hero{
 	color: #fff;
-	background: linear-gradient(90deg, rgba(111,177,127,1) 0%, rgba(154,173,89,1) 100%);	
+	background: linear-gradient(90deg, rgba(7, 245, 245, 0.959) 0%, rgb(105, 211, 230) 100%);	
 	padding: 2em 0; 
 }
 
@@ -52,7 +52,7 @@ body{
 
 .info-line{
 	display: flex;
-	color: #fff;
+	color: #050505;
 	width: 90%;
 	margin: 0 auto;
 	align-items: center;
@@ -69,7 +69,7 @@ p{
 }
 
 .icon-gradient{
-	background: linear-gradient(90deg, rgba(111,177,127,1) 0%, rgba(154,173,89,1) 100%);
+	background: linear-gradient(90deg, rgb(41, 218, 224) 0%, rgb(93, 238, 243) 100%);
 	border-radius: 100px;
 	font-size: 1.5em;
 	padding: .5em;

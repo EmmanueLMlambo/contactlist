@@ -6,7 +6,7 @@ body{
 .container{
 	max-width: none;
 	margin: 0 auto;
-	background: linear-gradient(90deg, rgb(84, 72, 196) 0%, rgb(154,173,89,1) 60%);
+	background: linear-gradient(90deg, rgb(92, 194, 224) 0%, rgb(126, 212, 228) 60%);
 	/*background-color: #206dd1;*/
 	height: 100vh;
 }
@@ -18,8 +18,8 @@ a{
 .header{
 	display: flex;
 	justify-content: space-evenly;
-	color: #dceb15;
-	background: linear-gradient(90deg, rgba(111,177,127,1) 0%, rgba(154,173,89,1) 100%);
+	color: #0e0e0d;
+	background: linear-gradient(90deg, rgb(43, 211, 233) 0%, rgb(249, 253, 253) 100%);
 	padding: 2em 0;
 	align-items: center;
 	font-style: italic;
@@ -29,7 +29,7 @@ a{
 	display: flex;
 	justify-content: space-evenly;
 	color: #dceb15;
-	background: linear-gradient(90deg, rgba(111,177,127,1) 0%, rgba(154,173,89,1) 100%);
+	background: linear-gradient(90deg, rgb(43, 211, 233) 0%, rgb(249, 253, 253) 200%);
 	
 	align-items: left;
 
@@ -52,7 +52,7 @@ h1{
 
 
 .contacts-library{
-	background: linear-gradient(90deg, rgb(84, 72, 196) 0%, rgb(154,173,89,1) 60%);
+	background: linear-gradient(90deg, rgb(8, 234, 241) 0%, rgb(242, 242, 245) 60%);
 }
 
 .add{
@@ -110,9 +110,19 @@ hr{
 	height: 60px;
 	width: 100%;
 	background-color: #184a45;
-	color: #fcf66a;
+	color: #f2f6f7;
 	text-align: center;
 }
+img{
+	visibility: visible;
+	transform: translateY(0) scale(1);
+	opacity: 1; 
+	-webkit-transform: translateY(0) scale(1); 
+	opacity: 1; 
+	-webkit-transition: -webkit-transform 0.8s ease 0.3s, opacity 0.8s ease 0.3s; 
+	transition: transform 0.8s ease 0.3s, opacity 0.8s ease 0.3s;
+	-webkit-perspective: 1000;
+	-webkit-backface-visibility: hidden;
 
-
+}
 

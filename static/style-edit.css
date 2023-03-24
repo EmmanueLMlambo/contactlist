@@ -10,7 +10,8 @@ body{
 .container{
 
 	margin: 0 auto;
-	background-color: #313438;
+	background-color: #f7f2f8;
+
 	min-height: 100vh;
 }
 
@@ -22,7 +23,8 @@ a{
 
 .hero{
 	color: white;
-	background: linear-gradient(90deg, rgba(111,177,127,1) 0%, rgba(154,173,89,1) 100%);	
+	background: linear-gradient(90deg, rgba(7, 245, 245, 0.959) 0%, rgb(105, 211, 230) 100%);	
+
 	padding: 2em 0; 
 }
 
@@ -74,7 +76,7 @@ p{
 }
 
 .icon-gradient{
-	background: linear-gradient(90deg, rgba(111,177,127,1) 0%, rgba(154,173,89,1) 100%);
+	background: linear-gradient(90deg, rgb(41, 218, 224) 0%, rgb(93, 238, 243) 100%);
 	border-radius: 100px;
 	font-size: 1.5em;
 	padding: .5em;
@@ -89,13 +91,13 @@ p{
 	background: none;
 	padding-left: 2em;
 	font-size: 1.2em;
-	color: #fff;
+	color: #080808;
 	outline: none;
 	text-transform: lowercase;
 }
 
 .button-container{
-	background-color: #313438;
+	background-color: #4fcfcf;
 	padding: 2em 3.5em;
 	color: #fff;
 }
@@ -108,7 +110,7 @@ p{
 	align-items: center;
 	padding: 1em 2em;
 	border-radius: 20px;
-	box-shadow:  6px 6px 12px #2d2f33, 
+	 box-shadow:  6px 6px 12px #2d2f33, 
              -6px -6px 12px #35393d;
 }
 
