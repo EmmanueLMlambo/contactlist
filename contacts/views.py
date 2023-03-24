@@ -3,6 +3,10 @@ from .models import Contacts
 from django.db.models import Q
 
 # Create your views here.
+def home(request):
+    return render(request, 'home.html')
+
+
 def index(request):
     contacts = Contacts.objects.all()
     search_input = request.GET.get('search-area')
