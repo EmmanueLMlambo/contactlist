@@ -1,87 +1,65 @@
 {%  load static %}
 
 <!DOCTYPE html>
-<html>
-<head>
-	<meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
-	
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+<html lang="en-us" xml:lang="en-us">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <link rel="stylesheet" type="text/css" href="{% static 'home.css' %}">
 
-    <script src="https://kit.fontawesome.com/6b20b1c14d.js" crossorigin="anonymous"></script>
-
-	<title> CIty of Mutare SwitchBoad </title>
-</head>
+        <title>City Of Mutare</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="DOCS/Styles.css" rel="stylesheet" type="text/css" />        
+    <head/>
 <body>
-	
+<section class="header">
 
-	<div class="container">
 
-		<!--this id the added coontent -->
-		<header class="header">
-	 	<img src="{% static 'images/mutarelogo.png' %}" >
-			<h1> 
-				City of Mutare Switchboard</h1>	
-				<img src="{% static 'images/mutarelogo.png' %}" >
-					</header>
-					<hr>
-			
-					<!--end of added content-->
+		<img src="{% static 'images/mutarelogo.png' %}" alt="logo" width="500" height="300" >
+        
+<h1>  CITY OF MUTARE   </h1>
+</section>
 
-		<!--  SEARCH FORM -->
-		<header id="search-area">
-			
-			<form action="/" method="GET" class="search-bar" id='search-form'>
+<div class="row">
+    <div class="column" >
+        <h2>Contact Details</h2>
+        Civic Centre,No 1 Queens Way,P.O.BOX 910 ,Mutare
+        <br>General Line:+263 2020 64412
+        <br>Hotline:+263 2020 60551         
+        <br>Fax:+263 020 6100233
+        <br>Cell:+263775792461
+		<br><a href="{% url 'home' %}"><em style="color: blue;">More contacts click  here</em></a>
 
-				<input type="search-name" class="contact-search" name="search-area" placeholder="type Name or Department"
-					value={{search_input}}>
 
-				<i onclick="document.getElementById('search-form').submit();" style="padding-left: 5px;"
-					class="fas fa-search"></i>
+        
+        </p>
+    </div>
+<div class="column">
+    <h2>Online Contact Details</h2>
+    <p><a href="https://www.facebook.com/MutareCityCouncil/" target="_blank" class="fa fa-facebook"> &nbsp The City Of Mutare</a></br>
+    <a href="mailto:emamups@gmail.com" class="fa fa-envelope" target="_blank" > &nbsp kimiskra@gmail.com</a></br>
+    <a href="https://www.twitter.com/CityofMutare" target="_blank" class="fa fa-twitter"> &nbsp @City Of Mutare </a></br>    
+    <a href="https://www.mutarecity.co.zw/" target="_blank" class="fa fa-google"> &nbsp www.mutarecity.co.zw</a> </br>
+    <a href="https://wa.me/+263775792461" target="_blank" class="fa fa-whatsapp"> &nbsp click here to Whatsapp us</a></br>
 
-			</form>
+    </p>
+</div>
+</div>
 
-			<!--  ADD-CONTACT BUTTON/ICON -->
-			<a href="{% url 'add-contact' %}"><i class="fas fa-plus-circle add"></i></a>
-		</header>
-<hr>
-
-		<!--  CONTACT LIST -->
-		<section class="contacts-library">
-			<ul class="contacts-list">
-			{% for contact in contacts %}
-				
-				<a href="{% url 'profile' contact.id %}" style= "text-decoration: none" >
-					<div class="contact-section">
-						<li class="list__item">
-							<p class="contact-name"> {{ contact.full_name | title }} </p>
-							<p style="color: white;" class="land_number"> {{ contact.land_number | title }} </p>
-				
-					</div>
-				</a>
-
-				<hr>
-				{% empty %}
-				<h3 style="color:#fff; padding:20px" > No contacts found...
-				<br><br>  Try searching using the department or name of person </h3>
-			{% endfor %}
-			</ul>
-			</section>
-			</div>
 
 
 
 <div class="fixed-bottom" id="footer">
 
-<div class="coca" style="padding-top: 15px;font-style:cambria ; font-size: 18px; font-weight: bold;">
-<p>Copyright © 2023 City of Mutare. Developed by E Mups & T Charekwa .
-</p>
-</div>
-</div>
+    <div class="coca" style="padding-top: 15px;font-style:cambria ; font-size: 18px; font-weight: bold;">
+    <p>Copyright © 2023 City of Mutare. Developed by E Mups & T Charekwa .
+    </p>
+    </div>
+    </div>
 
 
 
-</body>
+
+
+    </body>
 </html>

@@ -3,11 +3,11 @@ from .models import Contacts
 from django.db.models import Q
 
 # Create your views here.
-def home(request):
-    return render(request, 'home.html')
-
-
 def index(request):
+    return render(request, 'index.html')
+
+
+def home(request):
     contacts = Contacts.objects.all()
     search_input = request.GET.get('search-area')
     if search_input:
@@ -15,7 +15,7 @@ def index(request):
     else:
         contacts = Contacts.objects.all().order_by('full_name')
         search_input = ''
-    return render(request, 'index.html', {'contacts':contacts, 'search_input': search_input }, )
+    return render(request, 'home.html', {'contacts':contacts, 'search_input': search_input }, )
 
 
 def addContact(request):
