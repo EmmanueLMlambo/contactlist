@@ -19,13 +19,13 @@ h1{
 .column {
     float: left;
     width: 50%;
-    padding: 10px;
-    height: 300px; /* Should be removed. Only for demonstration */
+   /*height: 200px; Should be removed. Only for demonstration */
+    height: fit-content;
+    
 }
 
   /* Clear floats after the columns */
 .row:after {
-    content: "";
     display: table;
     clear: both;
 }
@@ -35,6 +35,9 @@ h1{
 }
 .row{
     font-size: 20px;
+
+	
+    
     
 }
 #footer{
@@ -50,4 +53,15 @@ h1{
 }
 a{
     text-decoration: none;
+}
+.button {
+    background-color: #08a73d;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;    
 }
