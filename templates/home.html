@@ -27,7 +27,7 @@
 			</a>
 				<img src="{% static 'images/mutarelogo.png' %}" >
 			<h1> 
-				City of Mutare Switchboard</h1>	
+				City of Mutare ContactList</h1>	
 				<img src="{% static 'images/mutarelogo.png' %}" >
 					</header>
 					<hr>
@@ -62,7 +62,12 @@
 						<li class="list__item">
 							<p class="contact-name"> {{ contact.full_name | title }} </p>
 							<p style="color: white;" class="land_number"> {{ contact.land_number | title }} </p>
-				
+				</li>
+<!-- these things allows a user to send a email-->
+						<li class="list__item">
+						<i><a href="mailto:{{contact.email | title}}" class="fa fa-envelope" target="_blank" ></a></i>
+						
+						</li>
 					</div>
 				</a>
 

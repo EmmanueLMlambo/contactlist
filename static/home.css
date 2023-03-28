@@ -17,12 +17,19 @@ h1{
 
   /* Create two equal columns that floats next to each other */
 .column {
-    float: left;
-    width: 50%;
+    float: right;
+    width: 40%;
    /*height: 200px; Should be removed. Only for demonstration */
     height: fit-content;
     
 }
+.column {
+    float: left;
+    width: 60%;
+   /*height: 200px; Should be removed. Only for demonstration */
+    height: fit-content;
+}
+
 
   /* Clear floats after the columns */
 .row:after {

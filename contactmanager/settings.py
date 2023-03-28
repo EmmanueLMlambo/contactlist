@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-gkhd*f#z^%unn*w2q^*9l&w2y!bzcv&kzt!jq&+i6lfx!ys_o0
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['192.168.0.93']
 
 INTERNAL_IPS = [
     # ...
@@ -82,7 +82,7 @@ WSGI_APPLICATION = 'contactmanager.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
-
+'''
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
@@ -100,7 +100,7 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
-'''
+
 
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
