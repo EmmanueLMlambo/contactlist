@@ -25,7 +25,7 @@
 		<a href="{% url 'index' %}">
 				<i  class="fas fa-chevron-circle-left back-btn"></i>
 			</a>
-	 	<img src="{% static 'images/mutarelogo.png' %}" >
+				<img src="{% static 'images/mutarelogo.png' %}" >
 			<h1> 
 				City of Mutare Switchboard</h1>	
 				<img src="{% static 'images/mutarelogo.png' %}" >
@@ -37,10 +37,10 @@
 		<!--  SEARCH FORM -->
 		<header id="search-area">
 			
-			<form action="/" method="GET" class="search-bar" id='search-form'>
+			<form action="#" method="GET" class="search-bar" id='search-form'>
 
 				<input type="search-name" class="contact-search" name="search-area" placeholder="type Name or Department"
-					value={{search_input}}>
+					value={{ search_input }}>
 
 				<i onclick="document.getElementById('search-form').submit();" style="padding-left: 5px;"
 					class="fas fa-search"></i>
@@ -72,8 +72,8 @@
 				<br><br>  Try searching using the department or name of person </h3>
 			{% endfor %}
 			</ul>
-			</section>
-			</div>
+			
+		
 
 
 
